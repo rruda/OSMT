@@ -1,0 +1,44 @@
+.header{
+    box-sizing: border-box;
+    position: sticky;
+    padding:.5rem;
+    backdrop-filter: blur(10px);
+    top: 0;
+    z-index: 10;
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    >div{
+        max-width: min(1350px,100vw - 2em);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header__left{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.iconWraper{
+    background-color: rgba(240, 248, 255, 0);
+    svg{
+        font-size: 2.5rem;
+        transition: 1s;
+
+    }
+    :hover{        
+        transition: .2s;
+        color: aliceblue;
+    }
+}
+.header__pages{
+    display: flex;
+    gap: 0.5rem;
+}
+.header__log-in{
+    color: aliceblue;
+}

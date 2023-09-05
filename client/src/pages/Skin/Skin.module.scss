@@ -1,0 +1,125 @@
+@import "../../index.module.scss";
+
+.skin{
+    display: flex;
+    flex-direction: column;
+
+}
+.skin__header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 0 ;
+    span{
+
+        font-size: 1.25rem;
+        color: rgba(240, 248, 255, 0.415);
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        @media (max-width:600px) {
+            flex-direction: column;
+        }
+    }
+
+}
+.skin__box{
+    z-index: 1;
+    box-shadow: 0px 0px 100px rgba(136, 224, 234, 0.245);
+    overflow: hidden;
+    background-color: rgba(225, 225, 225, 0.158);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+    @media (max-width:1200px) {
+        flex-direction: column;
+    }
+}
+.skin__img{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.412);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+    >div{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.478);
+    }
+}
+.skin__info{
+    flex: 0 0 20%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.skin__listImg{
+    display: grid;
+    gap: 0.5rem;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width:900px) {
+        grid-template-columns: 1fr 1fr ;
+    }
+    @media (max-width:600px) {
+        grid-template-columns: 1fr ;
+    }
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px rgba(240, 156, 230, 0.184);
+    img{
+        width: 100%;
+    }
+}
+.main{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    @media (max-width:600px) {
+       flex-direction: column-reverse;
+
+
+    }
+    
+}
+.screenshots{
+    color: $fontColor;
+    background-color: rgba(225, 225, 225, 0.158);
+    padding: .75rem;
+    border-radius: 0.5rem;
+}
+.titleWrap{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding:0 0 1rem 0;
+    >svg{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-weight: 500;
+    }
+
+}

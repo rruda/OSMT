@@ -1,0 +1,26 @@
+@import "../../index.module.scss";
+.addingArea{
+    display: flex;
+    background-color: $mainBgColor;
+    border-radius: 0.25rem;
+    justify-content: space-between;
+    svg{
+        font-size: 1.5rem;
+        transition: .3s;
+        &:hover{
+            filter: drop-shadow(0 0 10px rgb(255, 255, 255))
+        }
+    }
+    >*{
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+.tags{
+    display: flex;
+    gap: $gapValue;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 .5rem;
+}

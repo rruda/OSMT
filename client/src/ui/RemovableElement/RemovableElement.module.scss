@@ -1,0 +1,33 @@
+@import "../../index.module.scss";
+.element{
+    font-size: 1rem;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    &:hover{
+        >div{visibility: visible}
+    }
+    >div:hover{
+        background-color: rgba(0, 0, 0, 0.501);
+        visibility: visible;
+        >svg{color: rgba(255, 255, 255, 0.949);}
+        
+    }
+    >p{
+        padding: 0.5rem;
+        color: $fontColor;
+    }
+}
+.remove{
+    transition: 0.3s linear;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        color: rgba(255, 255, 255, 0);
+    }
+}

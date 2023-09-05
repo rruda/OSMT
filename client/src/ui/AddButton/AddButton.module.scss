@@ -1,0 +1,9 @@
+@import "../../index.module.scss";
+.button{
+    background-color: $mainBgColor;
+    color: $fontColor;
+    border: none;
+    border-radius:.5rem;
+    padding: .5rem;
+    cursor: pointer;
+}

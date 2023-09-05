@@ -1,0 +1,43 @@
+.skin{
+    background-color: rgba(40, 39, 39, 0.5);
+    color: rgba(240, 248, 255, 0.592);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: .25rem;
+}
+.skin__box{
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    padding: .35rem .35rem;
+
+    
+    
+}
+
+.skin__info{
+    
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    >*{
+        display: flex;
+        gap: .5rem;
+    }
+}
+.skin_image{
+    img{
+        aspect-ratio: 16/9;
+        width: 100%;
+    }
+}
+.line{
+    padding: 0.05rem 0 0 0;
+    position:absolute;
+    left: 0;
+    background-color: rgba(19, 19, 19, 0.16);
+    height: 1px;
+    width: 100%;
+}

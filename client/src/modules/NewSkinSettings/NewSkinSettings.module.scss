@@ -1,0 +1,29 @@
+@import "../../index.module.scss";
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap:$gapValue;
+}
+.naming{
+    display: flex;
+    gap:$gapValue;
+    :first-child{
+        flex: 0 1 30%;
+        width: 100%;
+    }
+    :last-child{
+        width: 100%;
+    }
+}
+.links{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width:900px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width:600px) {
+        grid-template-columns: 1fr ;
+    }
+}

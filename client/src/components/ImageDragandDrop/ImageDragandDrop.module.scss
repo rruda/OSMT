@@ -1,0 +1,52 @@
+@import "../../index.module.scss";
+
+.wrap{
+    display: flex;
+    padding:$padingSIze;
+    border-radius:0.5rem;
+    background-color: rgba(255, 255, 255, 0.088);
+    border: 2px dashed $fontColor;
+    min-height:200px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gapValue;
+    color:$fontColor;
+    transition: 0.5s;
+    &.drop{
+        box-shadow: 0 0px 50px rgba(250, 250, 250, 0.715);
+    }
+    svg{
+        font-size: 2rem;
+    }
+
+    
+    
+}
+.images{
+    display: grid;
+    gap: $gapValue;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width:600px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    img{
+        width: 100%;
+        max-width: 125px+10px*100;
+    }
+}
+.button{
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: $borderRadius;
+    padding: 0.5rem;
+    background-color:$mainBgColor;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+        filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+        background-color: rgba(240, 248, 255, 0.705);
+        color: rgb(71, 71, 71);
+    }
+
+}
